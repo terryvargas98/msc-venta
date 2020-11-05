@@ -42,7 +42,7 @@ router.get('/ListarProductos', async(req, res) => {
         });
         payload = [{
             topic: 'test',
-            messages: JSON.stringify(producto)
+            messages: JSON.stringify(productos)
         }]
         producer.send(payload, (error) => {
             console.log(payload);
