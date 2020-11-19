@@ -13,8 +13,8 @@ app.use(morgan('tiny'));
 app.use(cors());
 
 //routes
-const Routes = require('./src/routes/sales');
-app.use('/api', Routes);
+const Routes = require('./src/routes/venta');
+app.use('/service', Routes);
 
 
 app.get('/', function(request, response) {

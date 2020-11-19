@@ -1,17 +1,17 @@
 const { model, Schema } = require('mongoose');
 
-const SchemaProducto = new Schema({
-    producto_id: {
+const SchemaVenta = new Schema({
+    venta_id: {
         type: Number,
         required: true
     },
-    descripcion: {
+    producto_id: {
         type: String,
         required: true,
     },
-    precio: {
-        type: Number,
-        required: true,
+    cantidad: {
+        type: String,
+        required: true
     },
     Created: {
         type: Date,
@@ -19,4 +19,4 @@ const SchemaProducto = new Schema({
     },
 })
 
-module.exports = model('producto', SchemaProducto);
+module.exports = model('venta', SchemaVenta);
